@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .addPopup {
+    display: none;
+    position: fixed;
+    left: 45%;
+    top: 20%;
+    transform: translate(-50%, 5%);
+    border: 3px solid #999999;
+    z-index: 9;
+  }
+
+  .addContainer {
+    max-width: 300px;
+    padding: 20px;
+    background-color: #fff;
+  }
+ 
+  
+.addContainer input[type=text], .addContainer input[type=number]
+ {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 20px 0;
+      border: none;
+      background: #eee;
+    
+  }
+
+ .cancelSave
+ {
+     display: inline;
+     /* width: 50%; */
+     width: 120px;
+     padding: 10px;
+
+ } 
+
+
+ #displayTable
+ {
+  display: none;
+  border-collapse: collapse;
+  padding-right: 40px;
+  padding-top: 40px;
+  /* width: 70%; */
+}
+
+#displayTable td
+{
+  border: 1px solid #ddd;
+  padding: 8px;
+  width: 280px;
+  font-size: 25px;
+}
+
+
+#head {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #ffcad2;
+  color: white;
+  /* width: 40%; */
+}
+
+#h1
+{
+  font-size: 70px;
+}
+
+#h5
+{
+  font-size: 30px;
+}
+#displayTable tr:hover 
+{background-color: #ddd;}
+
+
+.header {
+  padding: 30px;
+  text-align: center;
+  background: lightblue;
+  color: white;
+}
+/* #add, #myLibrary
+{
+
+  float: right;
+
+} */
+
+#button
+{
+  padding-top: 100px;
+  padding-left: 100px;
+  float: left;
+}
+
+#table
+{
+  float: right;
+  
+}
+
+#deleteAll
+{
+  padding: 10px;
+  /* padding-left: 20px; */
+  font-size: 20px;
+}
+
+#deleteBtn
+{
+  padding-top: 10px;
+}
+
+
+#searchForm
+{
+  display: none;
+  position: fixed;
+  left: 49%;
+  top: 40%;
+
+  transform: translate(-50%, 5%);
+  border: 3px solid #999999;
+  z-index: 9;
+
+}
+
+#searchBtn
+{
+  padding-top: 1px;
+  font-size: 29.2px;
+}

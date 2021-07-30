@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script> -->
+</head>
+<body>
+   <div class="header">
+    <h1 id="h1">My Library</h1>
+    <h5 id="h5">"A reader lives a thousand lives before he dies, and the one who doesn't read, lives just one."</h3>
+   </div>
+
+   <div id="button">
+<button id="add" onclick="addFunction()">
+<img src="addBook.png" height="100px" class="bookImg"><br>
+<caption>Add book</caption> </button>
+
+<button id="myLibrary" onclick="myLibrary(); this.onclick=null">
+    <img src="books.jpg" height="100px" class="bookImg"><br>
+    <caption>My Library</caption></button>
+
+<div id="deleteBtn">
+  <button id="deleteAll" onclick="deleteAll()">Delete all books</button> 
+  <button id="searchBtn" onclick="searchBook()">&#x1F50D</button> 
+  </div> 
+
+  </div>
+<form id="searchForm">
+    
+    <input type="text" placeholder="Search" id="search"/>
+    <button type="submit" onclick="searchBooks()">&#x1F50D</button>
+    <button type="button" onclick="cancel()">&#10007</button>
+</form>
+
+
+<div id="formAdd" class="addPopup">
+    
+    <form class="addContainer" id="form">
+    <h1>New Book</h1>
+    <label for="name"><strong>Name:</strong></label>
+    <input type="text" id="name" placeholder="Name of book"/>
+
+    <label for="author"><strong>Author:</strong></label>
+    <input type="text" id="author" placeholder="Author" required="true">
+
+    <label for="pages"><strong>Pages:</strong></label>
+    <input type="number" id="pages" placeholder="Total number of pages" required="true">
+
+    <input type="checkbox" id="read"/>
+    <label for="read">Read</label><br><br>
+
+    <button type="button"  class="cancelSave" onclick="closeForm()">Cancel</button>
+    <button type="button" class="cancelSave" onclick="saveFunction()">Save</button>
+
+   </form>
+</div>
+
+
+<div id="table">
+<table id="displayTable" >
+    <tr id="tr">
+    <td id="head">Name</td>
+    <td id="head">Author</td>
+    <td id="head">Pages</td>
+   <td id="head">Read</td>
+   <div class="cell4div"><td id="head" class="deleteBtn">Delete</td></div>
+    </tr>
+    
+</table>
+</div>
+
+<script src="lib.js"></script>
+
+
+</body>
+</html>
